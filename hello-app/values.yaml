@@ -3,13 +3,13 @@
 # ---------------------------------------------------------------
 
 # How many copies (pods) of the web page to run
-replicaCount: 2
+replicaCount: 3
 
 # What the page shows
 page:
   title: "Hello from Argo CD + Helm"
-  message: "Version 1 - deployed with GitOps"
-  backgroundColor: "#2b6cb0"
+  message: "Version 2 - changed only in Git!"
+  backgroundColor: "#2f855a"
 
 image:
   repository: nginx
