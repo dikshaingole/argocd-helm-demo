@@ -1,5 +1,5 @@
 replicaCount: 1
 
 page:
-  message: "DEV environment - safe to break"
+  message: "DEV - testing a new feature"
   backgroundColor: "#dd6b20"
