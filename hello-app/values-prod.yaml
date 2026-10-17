@@ -1,0 +1,5 @@
+replicaCount: 3
+
+page:
+  message: "PROD environment - real users"
+  backgroundColor: "#c53030"

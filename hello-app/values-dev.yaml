@@ -1,0 +1,5 @@
+replicaCount: 1
+
+page:
+  message: "DEV environment - safe to break"
+  backgroundColor: "#dd6b20"
