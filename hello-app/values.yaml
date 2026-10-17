@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------
+# Change these values, git push, and Argo CD updates the cluster.
+# ---------------------------------------------------------------
+
+# How many copies (pods) of the web page to run
+replicaCount: 2
+
+# What the page shows
+page:
+  title: "Hello from Argo CD + Helm"
+  message: "Version 1 - deployed with GitOps"
+  backgroundColor: "#2b6cb0"
+
+image:
+  repository: nginx
+  tag: "1.27-alpine"
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 16Mi
+  limits:
+    cpu: 100m
+    memory: 64Mi

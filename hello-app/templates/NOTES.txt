@@ -1,0 +1,5 @@
+{{ .Release.Name }} is running with {{ .Values.replicaCount }} replica(s).
+
+Open it in your browser:
+  kubectl port-forward svc/{{ .Release.Name }} -n {{ .Release.Namespace }} 8081:{{ .Values.service.port }}
+  then visit http://localhost:8081
